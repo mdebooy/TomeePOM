@@ -6,14 +6,14 @@
     <version>2.1.0</version>
   </parent>
   <artifactId>tomee</artifactId>
-  <version>1.7.3-SNAPSHOT</version>
+  <version>1.7.3</version>
   <packaging>pom</packaging>
   <name>TomeePOM</name>
   <description>Voor applicaties die onder Tomee draaien.</description>
   <inceptionYear>2015</inceptionYear>
   <scm>
-    <developerConnection>scm:svn:http://svn.debooy.eu/svn/TomeePOM/trunk</developerConnection>
-    <connection>scm:svn:http://svn.debooy.eu/svn/TomeePOM/trunk</connection>
+    <developerConnection>scm:svn:http://svn.debooy.eu/svn/TomeePOM/tags/tomee-1.7.3</developerConnection>
+    <connection>scm:svn:http://svn.debooy.eu/svn/TomeePOM/tags/tomee-1.7.3</connection>
   </scm>
 
   <developers>
