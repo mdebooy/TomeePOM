@@ -6,7 +6,7 @@
     <version>2.1.0</version>
   </parent>
   <artifactId>tomee</artifactId>
-  <version>1.7.4-SNAPSHOT</version>
+  <version>1.7.3-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>TomeePOM</name>
   <description>Voor applicaties die onder Tomee draaien.</description>
