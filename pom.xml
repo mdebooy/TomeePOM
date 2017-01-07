@@ -3,10 +3,10 @@
   <parent>
     <groupId>eu.debooy.maven</groupId>
     <artifactId>pom</artifactId>
-    <version>2.2.0</version>
+    <version>2.2.1</version>
   </parent>
   <artifactId>tomee</artifactId>
-  <version>1.7.5-SNAPSHOT</version>
+  <version>1.7.4.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>TomeePOM</name>
   <description>Voor applicaties die onder Tomee draaien.</description>
@@ -76,7 +76,7 @@
       <dependency>
         <groupId>eu.debooy.jaas</groupId>
         <artifactId>jaas</artifactId>
-        <version>0.1.0</version>
+        <version>1.0.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
