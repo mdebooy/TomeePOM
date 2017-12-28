@@ -131,7 +131,7 @@
 
   <properties>
     <johnzon.version>1.0.0</johnzon.version>
-    <myfaces.version>2.2.11</myfaces.version>
+    <myfaces.version>2.2.12</myfaces.version>
     <tomahawk.version>1.1.14</tomahawk.version>
   </properties>
 </project>
