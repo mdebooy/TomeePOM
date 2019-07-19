@@ -3,13 +3,13 @@
   <parent>
     <groupId>eu.debooy.maven</groupId>
     <artifactId>pom</artifactId>
-    <version>2.3.0</version>
+    <version>2.3.1-SNAPSHOT</version>
   </parent>
   <artifactId>tomee</artifactId>
-  <version>7.1.1-SNAPSHOT</version>
+  <version>8.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>TomeePOM</name>
-  <description>Voor applicaties die onder Tomee draaien.</description>
+  <description>Voor applicaties die onder TomEE draaien.</description>
   <inceptionYear>2015</inceptionYear>
   <scm>
     <developerConnection>scm:git:ssh://ptah.debooy.eu/srv/git/debooy/TomeePOM.git</developerConnection>
@@ -32,34 +32,35 @@
 
   <dependencyManagement>
     <dependencies>
+      <!-- Web Applicatie -->
       <dependency>
-        <groupId>commons-lang</groupId>
-        <artifactId>commons-lang</artifactId>
-        <version>2.6</version>
+        <groupId>com.sun.facelets</groupId>
+        <artifactId>jsf-facelets</artifactId>
+        <version>1.1.14</version>
+        <optional>true</optional>
+      </dependency>
+      <dependency>
+        <groupId>eu.debooy.jaas</groupId>
+        <artifactId>jaas</artifactId>
+        <version>1.1.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
-        <groupId>org.apache.myfaces.core</groupId>
-        <artifactId>myfaces-api</artifactId>
-        <version>${myfaces.version}</version>
+        <groupId>javax.annotation</groupId>
+        <artifactId>jsr250-api</artifactId>
+        <version>1.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
-        <groupId>org.apache.myfaces.core</groupId>
-        <artifactId>myfaces-impl</artifactId>
-        <version>${myfaces.version}</version>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.8.1</version>
         <scope>provided</scope>
       </dependency>
-      <!--dependency>
-        <groupId>org.apache.openejb.patch</groupId>
-        <artifactId>openejb-jstl</artifactId>
+      <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
         <version>1.2</version>
-        <scope>provided</scope>
-      </dependency-->
-      <dependency>
-        <groupId>org.apache.tomee</groupId>
-        <artifactId>javaee-api</artifactId>
-        <version>7.0-1</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -81,9 +82,33 @@
         <scope>provided</scope>
       </dependency>
       <dependency>
-        <groupId>eu.debooy.jaas</groupId>
-        <artifactId>jaas</artifactId>
-        <version>1.0.0</version>
+        <groupId>org.apache.myfaces.core</groupId>
+        <artifactId>myfaces-api</artifactId>
+        <version>${myfaces.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.myfaces.core</groupId>
+        <artifactId>myfaces-impl</artifactId>
+        <version>${myfaces.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.openjpa</groupId>
+        <artifactId>openjpa</artifactId>
+        <version>${openjpa.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.tomee</groupId>
+        <artifactId>javaee-api</artifactId>
+        <version>8.0-1</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.microprofile.jwt</groupId>
+        <artifactId>microprofile-jwt-auth-api</artifactId>
+        <version>${mp-jwt.version}</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -92,41 +117,12 @@
         <version>1.7.21</version>
         <scope>provided</scope>
       </dependency>
-      <!-- Web Applicatie -->
-      <dependency>
-        <groupId>com.sun.facelets</groupId>
-        <artifactId>jsf-facelets</artifactId>
-          <version>1.1.14</version>
-        <optional>true</optional>
-      </dependency>
-      <dependency>
-        <groupId>javax.annotation</groupId>
-        <artifactId>jsr250-api</artifactId>
-        <version>1.0</version>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.myfaces.tomahawk</groupId>
-        <artifactId>tomahawk20</artifactId>
-        <version>${tomahawk.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>batik</groupId>
-            <artifactId>batik-awt-util</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>taglibs</groupId>
-        <artifactId>standard</artifactId>
-        <version>1.1.2</version>
-      </dependency>
     </dependencies>
   </dependencyManagement>
 
   <properties>
-    <johnzon.version>1.0.1</johnzon.version>
-    <myfaces.version>2.2.12</myfaces.version>
-    <tomahawk.version>1.1.14</tomahawk.version>
+    <johnzon.version>1.1.11</johnzon.version>
+    <mp-jwt.version>1.1.1</mp-jwt.version>
+    <myfaces.version>2.3.3</myfaces.version>
   </properties>
 </project>
