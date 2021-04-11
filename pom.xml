@@ -6,7 +6,7 @@
     <version>2.4.1</version>
   </parent>
   <artifactId>tomee</artifactId>
-  <version>8.0.8</version>
+  <version>8.0.9-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>TomeePOM</name>
   <description>Voor applicaties die onder TomEE draaien.</description>
@@ -14,7 +14,7 @@
   <scm>
     <developerConnection>scm:git:ssh://ptah.debooy.eu/srv/local/devops/git/debooy/TomeePOM.git</developerConnection>
     <connection>scm:git:ssh://ptah.debooy.eu/srv/local/devops/git/debooy/TomeePOM.git</connection>
-    <tag>tomee-8.0.8</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <developers>
