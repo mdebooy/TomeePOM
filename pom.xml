@@ -6,14 +6,14 @@
     <version>2.3.1-SNAPSHOT</version>
   </parent>
   <artifactId>tomee</artifactId>
-  <version>8.0.0-SNAPSHOT</version>
+  <version>8.0.2-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>TomeePOM</name>
   <description>Voor applicaties die onder TomEE draaien.</description>
   <inceptionYear>2015</inceptionYear>
   <scm>
-    <developerConnection>scm:git:ssh://ptah.debooy.eu/srv/git/debooy/TomeePOM.git</developerConnection>
-    <connection>scm:git:ssh://ptah.debooy.eu/srv/git/debooy/TomeePOM.git</connection>
+    <developerConnection>scm:git:ssh://ptah.debooy.eu/srv/local/devops/git/debooy/TomeePOM.git</developerConnection>
+    <connection>scm:git:ssh://ptah.debooy.eu/srv/local/devops/git/debooy/TomeePOM.git</connection>
     <tag>HEAD</tag>
   </scm>
 
@@ -54,7 +54,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
-        <version>3.8.1</version>
+        <version>3.10</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -94,6 +94,22 @@
         <scope>provided</scope>
       </dependency>
       <dependency>
+        <groupId>org.apache.myfaces.tomahawk</groupId>
+        <artifactId>tomahawk20</artifactId>
+        <version>${tomahawk.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>batik</groupId>
+            <artifactId>batik-awt-util</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>taglibs</groupId>
+        <artifactId>standard</artifactId>
+        <version>1.1.2</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.openjpa</groupId>
         <artifactId>openjpa</artifactId>
         <version>${openjpa.version}</version>
@@ -121,7 +137,8 @@
   </dependencyManagement>
 
   <properties>
-    <johnzon.version>1.1.13</johnzon.version>
-    <myfaces.version>2.3.4</myfaces.version>
+    <johnzon.version>1.2.25</johnzon.version>
+    <myfaces.version>2.3.6</myfaces.version>
+    <tomahawk.version>1.1.14</tomahawk.version>
   </properties>
 </project>
