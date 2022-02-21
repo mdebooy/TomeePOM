@@ -3,10 +3,10 @@
   <parent>
     <groupId>eu.debooy.maven</groupId>
     <artifactId>pom</artifactId>
-    <version>2.4.2-SNAPSHOT</version>
+    <version>2.4.2</version>
   </parent>
   <artifactId>tomee</artifactId>
-  <version>8.0.9-SNAPSHOT</version>
+  <version>8.0.9</version>
   <packaging>pom</packaging>
   <name>TomeePOM</name>
   <description>Voor applicaties die onder TomEE draaien.</description>
@@ -14,7 +14,7 @@
   <scm>
     <developerConnection>scm:git:ssh://ptah.debooy.eu/srv/local/devops/git/debooy/TomeePOM.git</developerConnection>
     <connection>scm:git:ssh://ptah.debooy.eu/srv/local/devops/git/debooy/TomeePOM.git</connection>
-    <tag>HEAD</tag>
+    <tag>tomee-8.0.9</tag>
   </scm>
 
   <developers>
