@@ -66,7 +66,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
-        <version>3.10</version>
+        <version>3.12.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -130,7 +130,7 @@
       <dependency>
         <groupId>org.apache.tomee</groupId>
         <artifactId>javaee-api</artifactId>
-        <version>8.0-2</version>
+        <version>8.0-6</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -155,10 +155,10 @@
   </dependencyManagement>
 
   <properties>
-    <jackson-version>2.13.4.1</jackson-version>
-    <johnzon.version>1.2.9</johnzon.version>
-    <myfaces.version>2.3.6</myfaces.version>
-    <slf4j.version>1.7.21</slf4j.version>
+    <jackson-version>2.14.0-rc1</jackson-version>
+    <johnzon.version>1.2.19</johnzon.version>
+    <myfaces.version>2.3.10</myfaces.version>
+    <slf4j.version>1.7.36</slf4j.version>
     <tomahawk.version>1.1.14</tomahawk.version>
   </properties>
 </project>
