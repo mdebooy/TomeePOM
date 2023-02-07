@@ -155,7 +155,7 @@
   </dependencyManagement>
 
   <properties>
-    <jackson-version>2.14.0-rc1</jackson-version>
+    <jackson-version>2.14.1</jackson-version>
     <johnzon.version>1.2.19</johnzon.version>
     <myfaces.version>2.3.10</myfaces.version>
     <slf4j.version>1.7.36</slf4j.version>
