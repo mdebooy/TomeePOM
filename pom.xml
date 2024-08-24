@@ -3,7 +3,7 @@
   <parent>
     <groupId>eu.debooy.maven</groupId>
     <artifactId>pom</artifactId>
-    <version>3.0.0</version>
+    <version>3.1.0-SNAPSHOT</version>
   </parent>
   <artifactId>tomee</artifactId>
   <version>8.0.17-SNAPSHOT</version>
