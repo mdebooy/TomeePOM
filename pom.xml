@@ -3,10 +3,10 @@
   <parent>
     <groupId>eu.debooy.maven</groupId>
     <artifactId>pom</artifactId>
-    <version>3.1.0</version>
+    <version>3.2.0-SNAPSHOT</version>
   </parent>
   <artifactId>tomee</artifactId>
-  <version>8.0.16.2-SNAPSHOT</version>
+  <version>10.0.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>TomeePOM</name>
   <description>Voor applicaties die onder TomEE draaien.</description>
@@ -34,12 +34,6 @@
     <dependencies>
       <!-- Web Applicatie -->
       <dependency>
-        <groupId>com.sun.facelets</groupId>
-        <artifactId>jsf-facelets</artifactId>
-        <version>1.1.14</version>
-        <optional>true</optional>
-      </dependency>
-      <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
         <artifactId>jackson-annotations</artifactId>
         <version>${jackson-version}</version>
@@ -58,21 +52,27 @@
         <scope>provided</scope>
       </dependency>
       <dependency>
-        <groupId>javax.annotation</groupId>
-        <artifactId>jsr250-api</artifactId>
-        <version>1.0</version>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>1.3.5</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>jakarta.el</groupId>
+        <artifactId>jakarta.el-api</artifactId>
+        <version>5.0.0</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>4.0.4</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
-        <version>3.12.0</version>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>commons-logging</groupId>
-        <artifactId>commons-logging</artifactId>
-        <version>1.2</version>
+        <version>3.17.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -106,24 +106,10 @@
         <scope>provided</scope>
       </dependency>
       <dependency>
-        <groupId>org.apache.myfaces.tomahawk</groupId>
-        <artifactId>tomahawk20</artifactId>
-        <version>${tomahawk.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>batik</groupId>
-            <artifactId>batik-awt-util</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>commons-collections</groupId>
-            <artifactId>commons-collections</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>taglibs</groupId>
-        <artifactId>standard</artifactId>
-        <version>1.1.2</version>
+        <groupId>org.apache.tomee.shade</groupId>
+        <artifactId>tomee-quartz-shade</artifactId>
+        <version>2.5.0</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.apache.openjpa</groupId>
@@ -133,14 +119,20 @@
       </dependency>
       <dependency>
         <groupId>org.apache.tomee</groupId>
-        <artifactId>javaee-api</artifactId>
-        <version>8.0-6</version>
+        <artifactId>jakartaee-api</artifactId>
+        <version>${jakartaee.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.tomee</groupId>
+        <artifactId>tomee</artifactId>
+        <version>${tomee.version}</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.microprofile.jwt</groupId>
         <artifactId>microprofile-jwt-auth-api</artifactId>
-        <version>1.1.1</version>
+        <version>2.1</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -159,10 +151,11 @@
   </dependencyManagement>
 
   <properties>
-    <jackson-version>2.15.2</jackson-version>
-    <johnzon.version>1.2.21</johnzon.version>
-    <myfaces.version>2.3.10</myfaces.version>
-    <slf4j.version>1.7.36</slf4j.version>
-    <tomahawk.version>1.1.14</tomahawk.version>
+    <jackson-version>2.18.3</jackson-version>
+    <jakartaee.version>10.0</jakartaee.version>
+    <johnzon.version>2.0.1</johnzon.version>
+    <myfaces.version>4.0.2</myfaces.version>
+    <slf4j.version>2.0.16</slf4j.version>
+    <tomee.version>10.0.1</tomee.version>
   </properties>
 </project>
