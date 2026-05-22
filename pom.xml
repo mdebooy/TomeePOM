@@ -6,7 +6,7 @@
     <version>3.2.0-SNAPSHOT</version>
   </parent>
   <artifactId>tomee</artifactId>
-  <version>10.1.4.0-SNAPSHOT</version>
+  <version>10.1.5.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>TomeePOM</name>
   <description>Voor applicaties die onder TomEE draaien.</description>
@@ -19,15 +19,15 @@
 
   <properties>
     <commons-lang3.version>3.20.0</commons-lang3.version>
-    <commons-logging.version>1.3.5</commons-logging.version>
+    <commons-logging.version>1.3.6</commons-logging.version>
     <debooy.jaas.version>1.1.0</debooy.jaas.version>
-    <jackson.version>2.21.0</jackson.version>
+    <jackson.version>2.21.2</jackson.version>
     <jacksona.version>2.21</jacksona.version>
     <jakartaee.version>10.0.1</jakartaee.version>
     <johnzon.version>2.0.2</johnzon.version>
     <microprofile.jwt.version>2.1</microprofile.jwt.version>
     <myfaces.version>4.0.3</myfaces.version>
-    <tomee.version>10.1.4</tomee.version>
+    <tomee.version>10.1.5</tomee.version>
     <tomee-quartz-shade.version>2.5.1</tomee-quartz-shade.version>
   </properties>
 
